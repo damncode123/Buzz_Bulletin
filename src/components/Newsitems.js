@@ -11,7 +11,7 @@ export class Newsitems extends Component {
   <div classname="card-body">
     <h5 classname="card-title">{title}..</h5>
     <p classname="card-text">{description}..</p>
-    <p className="card-text"><small className="text-muted">By {!author?"Unknown":author} on {new Date(date).toGMTString()} </small></p>
+    <p className="card-text"><small className="text-dark">By {!author?"Unknown":author} on {new Date(date).toGMTString()} </small></p>
     {/* target="_blank" helps us to open the article in new tab */}
     <a href={newsUrl} target='_blank' class="btn btn-sm btn-dark">Read More</a>
   </div>
